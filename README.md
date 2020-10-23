@@ -21,7 +21,7 @@ Take this survey to find out what programming language best fits you!
 
 #### To View Live Project Online:
 The live version is at this link:
-[gh-pages link]
+[https://harzulu.github.io/programming-selector/]
 
 ## Known Bugs/Issues
 
