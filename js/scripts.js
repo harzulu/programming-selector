@@ -1,12 +1,18 @@
 function answersResult(total, name) {
   if (total < 20) {
     $("#python").fadeIn();
-  } else if (total >= 20 && total < 30) {
+  } else if (total >= 20 && total < 25) {
+    $("#go").fadeIn();
+  } else if (total >= 25 && total < 30) {
     $("#swift").fadeIn();
-  } else if (total >= 30 && total < 40) {
+  } else if (total >= 30 && total < 35) {
+    $("#ruby").fadeIn();
+  } else if (total >= 35 && total < 40) {
     $("#javascript").fadeIn();
-  } else if (total >= 40 && total <= 50) {
+  } else if (total >= 40  && total < 45) {
     $("#cSharp").fadeIn();
+  } else if (total >= 45 && total <= 50) {
+    $("#rust").fadeIn();
   }
 }
 $(document).ready(function() {
