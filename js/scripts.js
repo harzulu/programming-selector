@@ -1,12 +1,12 @@
 function answersResult(total) {
   if (total < 20) {
-    $("#python").show();
+    $("#python").fadeIn();
   } else if (total >= 20 && total < 30) {
-    $("#swift").show();
+    $("#swift").fadeIn();
   } else if (total >= 30 && total < 40) {
-    $("#javascript").show();
+    $("#javascript").fadeIn();
   } else if (total >= 40 && total <= 50) {
-    $("#cSharp").show();
+    $("#cSharp").fadeIn();
   }
 }
 $(document).ready(function() {
@@ -14,8 +14,8 @@ $(document).ready(function() {
     event.preventDefault();
     const backColor = $("#color").val();
     document.body.style.background = backColor;
-    $(".color-select").hide();
-    $(".question").show();
+    $(".color-select").fadeOut();
+    $(".question").fadeIn();
     $("img").fadeIn();
   });
   $("form#survey").submit(function(event) {
@@ -35,5 +35,9 @@ $(document).ready(function() {
     $(".question").hide();
 
     answersResult(answersTotal);
+  });
+  $("form#retake").submit(function(event) {
+    event.preventDefault();
+    location.reload();
   });
 });

@@ -23,6 +23,7 @@ img {
 }
 
 .result img {
+  float: left;
   width: 20%;
   height: auto;
 }
