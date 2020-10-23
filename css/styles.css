@@ -19,5 +19,10 @@ img {
 }
 
 .result {
-  display: none;
+  display: none; 
+}
+
+.result img {
+  width: 20%;
+  height: auto;
 }
