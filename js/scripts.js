@@ -1,11 +1,11 @@
 function answersResult(total) {
-  if (total < 10) {
+  if (total < 20) {
     $("#python").show();
-  } else if (total > 10 && total < 15) {
+  } else if (total >= 20 && total < 30) {
     $("#swift").show();
-  } else if (total > 15 && total < 20) {
+  } else if (total >= 30 && total < 40) {
     $("#javascript").show();
-  } else if (total > 20 && total <= 25) {
+  } else if (total >= 40 && total <= 50) {
     $("#cSharp").show();
   }
 }
@@ -17,7 +17,12 @@ $(document).ready(function() {
     const answer3 = parseInt($("input:radio[name=subject]:checked").val());
     const answer4 = parseInt($("input:radio[name=fishing]:checked").val());
     const answer5 = parseInt($("input:radio[name=resource]:checked").val());
-    const answerTotal = answer1 + answer2 + answer3 + answer4 + answer5;
+    const answer6 = parseInt($("input:radio[name=music]:checked").val());
+    const answer7 = parseInt($("input:radio[name=program-type]:checked").val());
+    const answer8 = parseInt($("input:radio[name=lawnMower]:checked").val());
+    const answer9 = parseInt($("input:radio[name=group]:checked").val());
+    const answer10 = parseInt($("input:radio[name=name]:checked").val());
+    const answerTotal = answer1 + answer2 + answer3 + answer4 + answer5 + answer6 + answer7 + answer8 + answer9 + answer10;
     $(".result").hide();
     $(".question").hide();
 
