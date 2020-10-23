@@ -1,4 +1,4 @@
-function answersResult(total) {
+function answersResult(total, name) {
   if (total < 20) {
     $("#python").fadeIn();
   } else if (total >= 20 && total < 30) {
@@ -10,11 +10,11 @@ function answersResult(total) {
   }
 }
 $(document).ready(function() {
-  $("form#favColor").submit(function(event) {
+  $("form#introInfo").submit(function(event) {
     event.preventDefault();
     const backColor = $("#color").val();
     document.body.style.background = backColor;
-    $(".color-select").fadeOut();
+    $("#introInfo").fadeOut();
     $("#question-one").fadeIn();
     $("img").fadeIn();
   });
