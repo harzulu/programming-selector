@@ -10,6 +10,13 @@ function answersResult(total) {
   }
 }
 $(document).ready(function() {
+  $("form#favColor").submit(function(event) {
+    event.preventDefault();
+    const backColor = $("#color").val();
+    document.body.style.background = backColor;
+    $(".color-select").hide();
+    $(".question").show();
+  });
   $("form#survey").submit(function(event) {
     event.preventDefault();
     const answer1 = parseInt($("input:radio[name=experience]:checked").val());
@@ -22,10 +29,10 @@ $(document).ready(function() {
     const answer8 = parseInt($("input:radio[name=lawnMower]:checked").val());
     const answer9 = parseInt($("input:radio[name=group]:checked").val());
     const answer10 = parseInt($("input:radio[name=name]:checked").val());
-    const answerTotal = answer1 + answer2 + answer3 + answer4 + answer5 + answer6 + answer7 + answer8 + answer9 + answer10;
+    const answersTotal = answer1 + answer2 + answer3 + answer4 + answer5 + answer6 + answer7 + answer8 + answer9 + answer10;
     $(".result").hide();
     $(".question").hide();
 
-    answersResult(answerTotal);
+    answersResult(answersTotal);
   });
 });
