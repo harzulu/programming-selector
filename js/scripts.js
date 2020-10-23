@@ -19,6 +19,10 @@ $(document).ready(function() {
     $("img").fadeIn();
   });
 
+// I know this is very repetitive, I really liked this idea and couldn't
+//find another way to implement it that made sense to me.
+
+// Hopefully I can go back when I understand better how to make this more streamline
   $("#question1-next").click(function(event) {
     event.preventDefault();
     $("#question-one").hide();

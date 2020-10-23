@@ -25,7 +25,7 @@ The live version is at this link:
 
 ## Known Bugs/Issues
 
-There are no known bugs or issues at this time
+Very repetitive code in scripts.js to only show one question at a time. Couldn't find a way to implement this better that I could uncderstand. I will return later when I understand a way to make it more streamline.
 
 ## Support/Contact Details
 
