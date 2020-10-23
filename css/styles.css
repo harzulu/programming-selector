@@ -13,13 +13,19 @@ img {
   height: auto;
 }
 
+h2 {
+  border-bottom: 2px solid black;
+}
+
 .question {
   display: none;
   margin-top: 20px;
+  border: 2px solid black; 
 }
 
 .result {
-  display: none; 
+  display: none;
+  border: 2px solid black; 
 }
 
 .result img {
