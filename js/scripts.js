@@ -16,6 +16,7 @@ $(document).ready(function() {
     document.body.style.background = backColor;
     $(".color-select").hide();
     $(".question").show();
+    $("img").fadeIn();
   });
   $("form#survey").submit(function(event) {
     event.preventDefault();
