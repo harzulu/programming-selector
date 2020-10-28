@@ -138,7 +138,7 @@ $(document).ready(function() {
 
     answersResult(answersTotal);
   });
-  $("form#retake").submit(function(event) {
+  $("form.retake").submit(function(event) {
     event.preventDefault();
     location.reload();
   });
